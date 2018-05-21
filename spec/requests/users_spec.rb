@@ -12,12 +12,13 @@ RSpec.describe "Users", type: :request do
     let!(:user) { create(:user) }
 
     before do
-      login_user(user)
+      login_user(user, 'password')
     end
 
     it "show user page" do
       get user_path(user.id)
-      expect(response).to have_http_status(200)
+      # expect(response).to have_http_status(200)
+      expect(response.body).to include('個別')
     end
   end
 end
