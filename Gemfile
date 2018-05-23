@@ -41,6 +41,10 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
+
+  # When mail is sent from your application, Letter Opener will open a preview in the browser instead of sending.
+  gem 'letter_opener'
+  gem 'letter_opener_web'
 end
 
 group :development do
