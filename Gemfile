@@ -45,6 +45,9 @@ group :development, :test do
   # When mail is sent from your application, Letter Opener will open a preview in the browser instead of sending.
   gem 'letter_opener'
   gem 'letter_opener_web'
+
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
 end
 
 group :development do
